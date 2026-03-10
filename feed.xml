@@ -3,12 +3,107 @@
     <title>История с помехой</title>
     <link href="https://titomaxxx90.github.io/make-money-online/feed.xml" rel="self" />
     <link href="https://titomaxxx90.github.io/make-money-online" />
-    <updated>2026-03-10T12:59:41+05:00</updated>
+    <updated>2026-03-11T00:06:44+05:00</updated>
     <author>
         <name>Максим Прохоров</name>
     </author>
     <id>https://titomaxxx90.github.io/make-money-online</id>
 
+    <entry>
+        <title>SaaS на Githab Pages, используем Gemini</title>
+        <author>
+            <name>Максим Прохоров</name>
+        </author>
+        <link href="https://titomaxxx90.github.io/make-money-online/saas-na-githab-pages-ispolzuem-gemini.html"/>
+        <id>https://titomaxxx90.github.io/make-money-online/saas-na-githab-pages-ispolzuem-gemini.html</id>
+        <media:content url="https://titomaxxx90.github.io/make-money-online/media/posts/5/SaaS2.PNG" medium="image" />
+
+        <updated>2026-03-11T00:05:55+05:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://titomaxxx90.github.io/make-money-online/media/posts/5/SaaS2.PNG" alt="" />
+                    Задача стоит не простая. Html + js = SaaS. Решаем: Создание Doc-Maker.site (сейчас лежит на Github https://titomaxxx90.github.io/doc-maker/) — это отличный пример того, как современный «стек» технологий позволяет одному разработчику создать полноценный SaaS-продукт, который выглядит как работа целой команды. Вот «подкапотная» выжимка того, как создавался этот проект, и какие инструменты легли&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://titomaxxx90.github.io/make-money-online/media/posts/5/SaaS2.PNG" class="type:primaryImage" alt="" /></p>
+                <p>Задача стоит не простая. Html + js = SaaS. </p>
+<p>Решаем:</p>
+<p data-path-to-node="0">Создание <strong data-path-to-node="0" data-index-in-node="9">Doc-Maker.site</strong> (сейчас лежит на Github <a href="https://titomaxxx90.github.io/doc-maker/">https://titomaxxx90.github.io/doc-maker/</a>) — это отличный пример того, как современный «стек» технологий позволяет одному разработчику создать полноценный SaaS-продукт, который выглядит как работа целой команды.</p>
+<p data-path-to-node="1">Вот «подкапотная» выжимка того, как создавался этот проект, и какие инструменты легли в его основу:</p>
+<h3 data-path-to-node="2">1. Архитектура: «Frontend-only» с облачным бэкендом</h3>
+<p data-path-to-node="3">Основная идея заключалась в том, чтобы сделать сервис максимально легким и быстрым. Вместо того чтобы поднимать сложный сервер с Node.js или Python, вся логика вынесена в браузер (Frontend).</p>
+<ul data-path-to-node="4">
+<li>
+<p data-path-to-node="4,0,0"><strong data-path-to-node="4,0,0" data-index-in-node="0">HTML5 + CSS3 (Tailwind CSS):</strong> Это фундамент. Tailwind позволил собирать адаптивный интерфейс прямо в HTML-файлах, не отвлекаясь на написание сотен строк в <code data-path-to-node="4,0,0" data-index-in-node="154">.css</code> файлах. Это в разы ускорило верстку блоков и карточек.</p>
+</li>
+<li>
+<p data-path-to-node="4,1,0"><strong data-path-to-node="4,1,0" data-index-in-node="0">JavaScript (Vanilla JS):</strong> Весь функционал (калькулятор сумм, генерация текста прописью, управление состоянием приложения) написан на чистом JS. Это дает максимальную производительность без лишних библиотек.</p>
+</li>
+</ul>
+<h3 data-path-to-node="5">2. «Мозг» и Хранение: Supabase</h3>
+<p data-path-to-node="6">Это самый важный инструмент, который заменил собой написание громоздкого бэкенда.</p>
+<ul data-path-to-node="7">
+<li>
+<p data-path-to-node="7,0,0"><strong data-path-to-node="7,0,0" data-index-in-node="0">Supabase</strong> (альтернатива Firebase) предоставил всё необходимое «из коробки»:</p>
+<ul data-path-to-node="7,0,1">
+<li>
+<p data-path-to-node="7,0,1,0,0"><strong data-path-to-node="7,0,1,0,0" data-index-in-node="0">База данных (PostgreSQL):</strong> Хранит всех пользователей, историю их счетов и актов.</p>
+</li>
+<li>
+<p data-path-to-node="7,0,1,1,0"><strong data-path-to-node="7,0,1,1,0" data-index-in-node="0">Auth API:</strong> Позволило реализовать регистрацию/вход за несколько строк кода, не задумываясь о том, как безопасно хранить пароли (всё делает Supabase).</p>
+</li>
+<li>
+<p data-path-to-node="7,0,1,2,0"><strong data-path-to-node="7,0,1,2,0" data-index-in-node="0">RLS (Row Level Security):</strong> Мощный механизм безопасности, который гарантирует, что пользователь «А» никогда не увидит документы пользователя «Б», даже если он знает ID документа.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 data-path-to-node="8">3. Генерация PDF: html2pdf.js</h3>
+<p data-path-to-node="9">Это «магия», которая превращает ваш экранный макет в полноценный документ:</p>
+<ul data-path-to-node="10">
+<li>
+<p data-path-to-node="10,0,0">Библиотека <strong data-path-to-node="10,0,0" data-index-in-node="11">html2pdf.js</strong> берет кусок HTML (вашу форму счета) и конвертирует его в PDF, сохраняя все шрифты, отступы и таблицы.</p>
+</li>
+<li>
+<p data-path-to-node="10,1,0">Она работает в связке с <strong data-path-to-node="10,1,0" data-index-in-node="24">html2canvas</strong>, который «фотографирует» ваш <code data-path-to-node="10,1,0" data-index-in-node="65">div</code> с документом перед конвертацией.</p>
+</li>
+</ul>
+<h3 data-path-to-node="11">4. Инструменты разработки (Toolchain)</h3>
+<p data-path-to-node="12">Процесс создания выглядел как итеративный цикл:</p>
+<ol start="1" data-path-to-node="13">
+<li>
+<p data-path-to-node="13,0,0"><strong data-path-to-node="13,0,0" data-index-in-node="0">Прототипирование:</strong> Сначала набрасывался «скелет» на обычном HTML.</p>
+</li>
+<li>
+<p data-path-to-node="13,1,0"><strong data-path-to-node="13,1,0" data-index-in-node="0">Итерации:</strong> Использование локального сервера для мгновенного отображения изменений (<code data-path-to-node="13,1,0" data-index-in-node="82">Live Server</code> в VS Code).</p>
+</li>
+<li>
+<p data-path-to-node="13,2,0"><strong data-path-to-node="13,2,0" data-index-in-node="0">Деплой:</strong> Поскольку это статический сайт, его можно запустить где угодно. Для таких проектов идеально подходят <strong data-path-to-node="13,2,0" data-index-in-node="109">Vercel</strong> или <strong data-path-to-node="13,2,0" data-index-in-node="120">GitHub Pages</strong>.</p>
+</li>
+<li>
+<p data-path-to-node="13,3,0"><strong data-path-to-node="13,3,0" data-index-in-node="0">СУБД-менеджмент:</strong> Весь SQL-код для таблиц (<code data-path-to-node="13,3,0" data-index-in-node="42">ALTER TABLE</code>, <code data-path-to-node="13,3,0" data-index-in-node="55">CREATE POLICY</code>) тестировался прямо в SQL-редакторе Supabase, который встроен в их админ-панель.</p>
+</li>
+</ol>
+<h3 data-path-to-node="14">Почему этот подход эффективен?</h3>
+<ul data-path-to-node="15">
+<li>
+<p data-path-to-node="15,0,0"><strong data-path-to-node="15,0,0" data-index-in-node="0">Скорость:</strong> Вы не тратите время на настройку серверов, Docker-контейнеров или API-эндпоинтов.</p>
+</li>
+<li>
+<p data-path-to-node="15,1,0"><strong data-path-to-node="15,1,0" data-index-in-node="0">Масштабируемость:</strong> База данных PostgreSQL готова к огромным объемам данных.</p>
+</li>
+<li>
+<p data-path-to-node="15,2,0"><strong data-path-to-node="15,2,0" data-index-in-node="0">Стоимость:</strong> Использование «Serverless»-решений (как Supabase) позволяет проекту работать бесплатно или за копейки на старте.</p>
+</li>
+</ul>
+<p data-path-to-node="16">Проект создан по принципу <strong data-path-to-node="16" data-index-in-node="26">«Минимально жизнеспособного продукта» (MVP)</strong>: сначала логика, потом функционал, и в самом конце — упаковка в облако. Это позволяет очень быстро добавлять новые функции (как мы сейчас делаем с АВР), просто дописывая нужные функции в JS и обновляя схему БД.</p>
+<p data-path-to-node="16">если кому хочется подробнее или подобный продукт пишите: mprokhorov@proton.me</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Будем SaaS на Github Pages</title>
         <author>
