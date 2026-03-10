@@ -3,12 +3,248 @@
     <title>История с помехой</title>
     <link href="https://titomaxxx90.github.io/make-money-online/feed.xml" rel="self" />
     <link href="https://titomaxxx90.github.io/make-money-online" />
-    <updated>2026-03-07T17:47:26+05:00</updated>
+    <updated>2026-03-10T11:28:27+05:00</updated>
     <author>
         <name>Максим Прохоров</name>
     </author>
     <id>https://titomaxxx90.github.io/make-money-online</id>
 
+    <entry>
+        <title>Будем SaaS на Github Pages</title>
+        <author>
+            <name>Максим Прохоров</name>
+        </author>
+        <link href="https://titomaxxx90.github.io/make-money-online/budem-saas-na-github-pages.html"/>
+        <id>https://titomaxxx90.github.io/make-money-online/budem-saas-na-github-pages.html</id>
+        <media:content url="https://titomaxxx90.github.io/make-money-online/media/posts/4/Gemini_Generated_Image_prujyjprujyjpruj.png" medium="image" />
+
+        <updated>2026-03-10T11:28:05+05:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://titomaxxx90.github.io/make-money-online/media/posts/4/Gemini_Generated_Image_prujyjprujyjpruj.png" alt="" />
+                    Шаг 1: Выяснение требований Чтобы написать идеальный код, мне нужно задать тебе несколько уточняющих вопросов (ты можешь ответить на них позже, а пока я предложу базовый вариант): Стек технологий: Тебе комфортнее работать с современным фреймворком вроде React (он идеально подходит для таких форм и переключений) или лучше сделать все на&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://titomaxxx90.github.io/make-money-online/media/posts/4/Gemini_Generated_Image_prujyjprujyjpruj.png" class="type:primaryImage" alt="" /></p>
+                <h3 data-path-to-node="3">Шаг 1: Выяснение требований</h3>
+<p data-path-to-node="4">Чтобы написать идеальный код, мне нужно задать тебе несколько уточняющих вопросов (ты можешь ответить на них позже, а пока я предложу базовый вариант):</p>
+<ol start="1" data-path-to-node="5">
+<li>
+<p data-path-to-node="5,0,0"><strong data-path-to-node="5,0,0" data-index-in-node="0">Стек технологий:</strong> Тебе комфортнее работать с современным фреймворком вроде <strong data-path-to-node="5,0,0" data-index-in-node="74">React</strong> (он идеально подходит для таких форм и переключений) или лучше сделать все на чистом <strong data-path-to-node="5,0,0" data-index-in-node="165">HTML/JavaScript</strong>? <i data-path-to-node="5,0,0" data-index-in-node="182">В своем решении ниже я буду использовать React, так как он лучше всего подходит для твоих задач.</i></p>
+</li>
+<li>
+<p data-path-to-node="5,1,0"><strong data-path-to-node="5,1,0" data-index-in-node="0">База данных:</strong> У тебя уже есть аккаунт в Supabase и созданный там проект?</p>
+</li>
+<li>
+<p data-path-to-node="5,2,0"><strong data-path-to-node="5,2,0" data-index-in-node="0">Специфика стран:</strong> Для разных стран (РФ, РК, РБ, КР) формы сильно отличаются. Есть ли у тебя образцы или списки обязательных полей для каждой страны? (Например, в РФ нужен ИНН/КПП, а в РК — БИН/ИИН и КБЕ).</p>
+</li>
+</ol>
+<h3 data-path-to-node="6">Шаг 2: Описание решения</h3>
+<p data-path-to-node="7">Мы создадим <strong data-path-to-node="7" data-index-in-node="12">Single Page Application (SPA)</strong> на базе React.</p>
+<ul data-path-to-node="8">
+<li>
+<p data-path-to-node="8,0,0"><strong data-path-to-node="8,0,0" data-index-in-node="0">Интерфейс (Frontend):</strong> React + Tailwind CSS (для быстрого и красивого современного дизайна, который сам адаптируется под телефоны и ПК).</p>
+</li>
+<li>
+<p data-path-to-node="8,1,0"><strong data-path-to-node="8,1,0" data-index-in-node="0">База данных (Backend):</strong> Supabase. Он возьмет на себя регистрацию пользователей (Auth) и хранение истории выставленных счетов в базе данных PostgreSQL.</p>
+</li>
+<li>
+<p data-path-to-node="8,2,0"><strong data-path-to-node="8,2,0" data-index-in-node="0">Экспорт:</strong> Мы будем использовать библиотеки <code data-path-to-node="8,2,0" data-index-in-node="42">jspdf</code> (для создания PDF) и <code data-path-to-node="8,2,0" data-index-in-node="69">xlsx</code> (для Excel).</p>
+</li>
+<li>
+<p data-path-to-node="8,3,0"><strong data-path-to-node="8,3,0" data-index-in-node="0">Хостинг:</strong> GitHub Pages отлично работает со статичными сборками React.</p>
+</li>
+</ul>
+<p data-path-to-node="9"><strong data-path-to-node="9" data-index-in-node="0">Мои идеи, что можно добавить (дополнительный функционал):</strong></p>
+<ul data-path-to-node="10">
+<li>
+<p data-path-to-node="10,0,0"><strong data-path-to-node="10,0,0" data-index-in-node="0">Автозаполнение:</strong> При вводе БИН/ИНН автоматически подтягивать название компании из открытых API.</p>
+</li>
+<li>
+<p data-path-to-node="10,1,0"><strong data-path-to-node="10,1,0" data-index-in-node="0">QR-код для оплаты:</strong> Автоматическая генерация QR-кода на счете для быстрой оплаты через банковские приложения.</p>
+</li>
+<li>
+<p data-path-to-node="10,2,0"><strong data-path-to-node="10,2,0" data-index-in-node="0">Дашборд:</strong> Простой график на главной странице, показывающий сумму выставленных счетов за месяц.</p>
+</li>
+<li>
+<p data-path-to-node="10,3,0"><strong data-path-to-node="10,3,0" data-index-in-node="0">Отправка на почту:</strong> Кнопка "Отправить клиенту", которая сразу шлет PDF на email.</p>
+</li>
+</ul>
+<hr data-path-to-node="11">
+<h3 data-path-to-node="12">Шаг 3: Структура файлов</h3>
+<p data-path-to-node="13">Для начала работы тебе понадобится установить Node.js на компьютер. Мы создадим проект с помощью сборщика Vite (это современный и быстрый инструмент).</p>
+<p data-path-to-node="14">Структура нашего проекта будет выглядеть так:</p>
+<div class="code-block ng-tns-c3739710482-25 ng-animate-disabled ng-trigger ng-trigger-codeBlockRevealAnimation" data-hveid="0" data-ved="0CAAQhtANahcKEwix9MLT15STAxUAAAAAHQAAAAAQDw">
+<div class="code-block-decoration header-formatted gds-title-s ng-tns-c3739710482-25 ng-star-inserted"><span class="ng-tns-c3739710482-25">Plaintext</span>
+<div class="buttons ng-tns-c3739710482-25 ng-star-inserted"> </div>
+</div>
+<div class="formatted-code-block-internal-container ng-tns-c3739710482-25">
+<div class="animated-opacity ng-tns-c3739710482-25">
+<pre class="ng-tns-c3739710482-25"><code class="code-container formatted ng-tns-c3739710482-25" role="text" data-test-id="code-content">/invoice-app
+├── package.json               # Список зависимостей (библиотек)
+├── index.html                 # Главный HTML файл
+├── src/
+│   ├── main.jsx               # Точка входа React
+│   ├── App.jsx                # Главный компонент приложения
+│   ├── supabaseClient.js      # Файл подключения к твоей базе Supabase
+│   ├── components/
+│   │   ├── Auth.jsx           # Форма входа/регистрации
+│   │   ├── InvoiceForm.jsx    # Умная форма с переключением стран
+│   │   └── History.jsx        # Таблица сохраненных счетов
+│   └── utils/
+│       └── exportDocs.js      # Логика сохранения в PDF и Excel
+</code></pre>
+</div>
+</div>
+</div>
+<hr data-path-to-node="16">
+<h3 data-path-to-node="17">Шаг 4: Базовый код приложения (MVP)</h3>
+<p data-path-to-node="18">Мы напишем фундамент — основной код, который демонстрирует подключение базы, форму с переключением стран и логику работы.</p>
+<h4 data-path-to-node="19">1. Подключение к Supabase (<code data-path-to-node="19" data-index-in-node="27">src/supabaseClient.js</code>)</h4>
+<p data-path-to-node="20">Этот файл связывает твое приложение с базой данных. Тебе нужно будет вставить сюда свои ключи из панели Supabase.</p>
+<div class="code-block ng-tns-c3739710482-26 ng-animate-disabled ng-trigger ng-trigger-codeBlockRevealAnimation" data-hveid="0" data-ved="0CAAQhtANahcKEwix9MLT15STAxUAAAAAHQAAAAAQEA">
+<div class="code-block-decoration header-formatted gds-title-s ng-tns-c3739710482-26 ng-star-inserted"><span class="ng-tns-c3739710482-26">JavaScript</span>
+<div class="buttons ng-tns-c3739710482-26 ng-star-inserted"> </div>
+</div>
+<div class="formatted-code-block-internal-container ng-tns-c3739710482-26">
+<div class="animated-opacity ng-tns-c3739710482-26">
+<pre class="ng-tns-c3739710482-26"><code class="code-container formatted ng-tns-c3739710482-26" role="text" data-test-id="code-content"><span class="hljs-keyword">import</span> { createClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'@supabase/supabase-js'</span>;
+
+<span class="hljs-comment">// Замени эти данные на свои из настроек проекта Supabase (Project Settings -&gt; API)</span>
+<span class="hljs-keyword">const</span> supabaseUrl = <span class="hljs-string">'ТВОЙ_SUPABASE_URL'</span>;
+<span class="hljs-keyword">const</span> supabaseKey = <span class="hljs-string">'ТВОЙ_SUPABASE_ANON_KEY'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> supabase = createClient(supabaseUrl, supabaseKey);
+</code></pre>
+</div>
+</div>
+</div>
+<h4 data-path-to-node="22">2. Главная форма создания счета (<code data-path-to-node="22" data-index-in-node="33">src/components/InvoiceForm.jsx</code>)</h4>
+<p data-path-to-node="23">Здесь мы реализуем переключение между странами и сбор данных.</p>
+<div class="code-block ng-tns-c3739710482-27 ng-animate-disabled ng-trigger ng-trigger-codeBlockRevealAnimation" data-hveid="0" data-ved="0CAAQhtANahcKEwix9MLT15STAxUAAAAAHQAAAAAQEQ">
+<div class="code-block-decoration header-formatted gds-title-s ng-tns-c3739710482-27 ng-star-inserted"><span class="ng-tns-c3739710482-27">JavaScript</span>
+<div class="buttons ng-tns-c3739710482-27 ng-star-inserted"> </div>
+</div>
+<div class="formatted-code-block-internal-container ng-tns-c3739710482-27">
+<div class="animated-opacity ng-tns-c3739710482-27">
+<pre class="ng-tns-c3739710482-27"><code class="code-container formatted ng-tns-c3739710482-27" role="text" data-test-id="code-content"><span class="hljs-keyword">import</span> { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { supabase } <span class="hljs-keyword">from</span> <span class="hljs-string">'../supabaseClient'</span>;
+<span class="hljs-comment">// Функции экспорта, которые мы создадим позже</span>
+<span class="hljs-keyword">import</span> { exportToPDF, exportToExcel } <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils/exportDocs'</span>; 
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">InvoiceForm</span>(<span class="hljs-params">{ user }</span>) </span>{
+  <span class="hljs-comment">// Состояние для выбранной страны</span>
+  <span class="hljs-keyword">const</span> [country, setCountry] = useState(<span class="hljs-string">'РК'</span>);
+  
+  <span class="hljs-comment">// Состояние для данных формы</span>
+  <span class="hljs-keyword">const</span> [formData, setFormData] = useState({
+    <span class="hljs-attr">clientName</span>: <span class="hljs-string">''</span>,
+    <span class="hljs-attr">amount</span>: <span class="hljs-string">''</span>,
+    <span class="hljs-attr">taxId</span>: <span class="hljs-string">''</span>, <span class="hljs-comment">// ИНН или БИН</span>
+    <span class="hljs-attr">description</span>: <span class="hljs-string">'Оплата за услуги веб-разработки'</span>
+  });
+
+  <span class="hljs-comment">// Функция для обновления данных при вводе</span>
+  <span class="hljs-keyword">const</span> handleChange = <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  <span class="hljs-comment">// Функция сохранения в историю (в Supabase)</span>
+  <span class="hljs-keyword">const</span> handleSaveToHistory = <span class="hljs-keyword">async</span> () =&gt; {
+    <span class="hljs-keyword">const</span> { data, error } = <span class="hljs-keyword">await</span> supabase
+      .from(<span class="hljs-string">'invoices'</span>)
+      .insert([
+        { 
+          <span class="hljs-attr">user_id</span>: user.id, 
+          <span class="hljs-attr">country</span>: country, 
+          <span class="hljs-attr">client_name</span>: formData.clientName, 
+          <span class="hljs-attr">amount</span>: formData.amount,
+          <span class="hljs-attr">details</span>: formData
+        }
+      ]);
+      
+    <span class="hljs-keyword">if</span> (error) alert(<span class="hljs-string">'Ошибка сохранения: '</span> + error.message);
+    <span class="hljs-keyword">else</span> alert(<span class="hljs-string">'Счет успешно сохранен в историю!'</span>);
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"text-2xl font-bold mb-6 text-gray-800"</span>&gt;</span>Создание счета / АВР<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      
+      {/* Кнопки переключения стран */}
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"flex space-x-2 mb-6"</span>&gt;</span>
+        {['РК', 'РФ', 'РБ', 'КР'].map(c =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> 
+            <span class="hljs-attr">key</span>=<span class="hljs-string">{c}</span>
+            <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCountry(c)}
+            className={`px-4 py-2 rounded ${country === c ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'}`}
+          &gt;
+            {c}
+          <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        ))}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      {/* Форма */}
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"space-y-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"block text-sm font-medium text-gray-700"</span>&gt;</span>Название компании клиента<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"clientName"</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange}</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mt-1 block w-full border border-gray-300 rounded-md p-2"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"block text-sm font-medium text-gray-700"</span>&gt;</span>
+            {country === 'РК' ? 'БИН/ИИН' : 'ИНН'} клиента
+          <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"taxId"</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange}</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mt-1 block w-full border border-gray-300 rounded-md p-2"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"block text-sm font-medium text-gray-700"</span>&gt;</span>Сумма<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"amount"</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange}</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mt-1 block w-full border border-gray-300 rounded-md p-2"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      {/* Кнопки действий */}
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"mt-8 flex flex-wrap gap-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> exportToPDF(formData, country)} className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"&gt;
+          Скачать PDF
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> exportToExcel(formData, country)} className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"&gt;
+          Скачать Excel
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleSaveToHistory}</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600"</span>&gt;</span>
+          Сохранить в историю
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+</div>
+</div>
+</div>
+<hr data-path-to-node="25">
+<h3 data-path-to-node="26">Шаг 5: Инструкция по сборке и запуску (Первые шаги)</h3>
+<p data-path-to-node="27">Чтобы этот код ожил на твоем компьютере, выполни следующие простые шаги в терминале (командной строке):</p>
+<ol start="1" data-path-to-node="28">
+<li>
+<p data-path-to-node="28,0,0"><strong data-path-to-node="28,0,0" data-index-in-node="0">Создай проект:</strong> Открой терминал и введи: <code data-path-to-node="28,0,0" data-index-in-node="40">npm create vite@latest invoice-app -- --template react</code> Затем перейди в папку проекта: <code data-path-to-node="28,0,0" data-index-in-node="126">cd invoice-app</code></p>
+</li>
+<li>
+<p data-path-to-node="28,1,0"><strong data-path-to-node="28,1,0" data-index-in-node="0">Установи необходимые библиотеки:</strong> Нам понадобятся инструменты для работы с базой данных, дизайном и экспортом. <code data-path-to-node="28,1,0" data-index-in-node="110">npm install @supabase/supabase-js jspdf xlsx html2canvas</code> <code data-path-to-node="28,1,0" data-index-in-node="167">npm install -D tailwindcss postcss autoprefixer</code> <code data-path-to-node="28,1,0" data-index-in-node="215">npx tailwindcss init -p</code></p>
+</li>
+<li>
+<p data-path-to-node="28,2,0"><strong data-path-to-node="28,2,0" data-index-in-node="0">Запусти проект локально:</strong> <code data-path-to-node="28,2,0" data-index-in-node="25">npm run dev</code> Открой в браузере ссылку <code data-path-to-node="28,2,0" data-index-in-node="62">http://localhost:5173</code> — там появится твое приложение!</p>
+</li>
+<li>
+<p data-path-to-node="28,3,0"><strong data-path-to-node="28,3,0" data-index-in-node="0">Подготовка базы данных:</strong> В панели Supabase создай новую таблицу с названием <code data-path-to-node="28,3,0" data-index-in-node="75">invoices</code>. Добавь в неё колонки: <code data-path-to-node="28,3,0" data-index-in-node="107">id</code> (уже есть), <code data-path-to-node="28,3,0" data-index-in-node="122">user_id</code> (uuid), <code data-path-to-node="28,3,0" data-index-in-node="138">country</code> (text), <code data-path-to-node="28,3,0" data-index-in-node="154">client_name</code> (text), <code data-path-to-node="28,3,0" data-index-in-node="174">amount</code> (numeric), <code data-path-to-node="28,3,0" data-index-in-node="192">details</code> (jsonb).</p>
+</li>
+</ol>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Publii - удобная замена WordPress для ведения блога.</title>
         <author>
@@ -22,7 +258,7 @@
             <summary type="html">
                 <![CDATA[
                         <img src="https://titomaxxx90.github.io/make-money-online/media/posts/3/Snimok.PNG" alt="" />
-                    Publii — простой способ создать сайт без программирования Сегодня создать сайт можно буквально за несколько часов, даже если вы не умеете программировать. Одним из удобных инструментов для этого является Publii — бесплатная система управления сайтом, которая работает прямо на вашем компьютере. Publii — это десктопная&hellip;
+                    Publii — простой способ создать сайт без программирования Сегодня создать сайт можно буквально за несколько часов, даже если вы не умеете программировать. Одним из удобных инструментов для этого является Publii — бесплатная система управления сайтом, которая работает прямо на вашем компьютере. Publii — это десктопная CMS для создания статических сайтов.
                 ]]>
             </summary>
         <content type="html">
@@ -134,7 +370,7 @@
             <summary type="html">
                 <![CDATA[
                         <img src="https://titomaxxx90.github.io/make-money-online/media/posts/1/c203330d-debc-455e-9faf-12140e266d69.png" alt="" />
-                    ## Как я начал фриланс в 35 лет и вышел на первые заказы на WordPress В 35 лет я решил кардинально изменить подход к работе и попробовать себя во фрилансе. До этого был обычный опыт работы, но хотелось большей свободы, развития и возможности напрямую работать&hellip;
+                    ## Как я начал фриланс в 35 лет и вышел на первые заказы на WordPress В 35 лет я решил кардинально изменить подход к работе и попробовать себя во фрилансе. До этого был обычный опыт работы, но хотелось большей свободы, развития и возможности напрямую работать с клиентами. Я выбрал направление&hellip;
                 ]]>
             </summary>
         <content type="html">
